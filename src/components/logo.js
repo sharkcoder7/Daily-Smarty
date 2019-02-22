@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import { Link } from 'react-router-dom';
+
 class Logo extends Component {
     render() {
         const size = {
@@ -8,10 +10,12 @@ class Logo extends Component {
         }
         return (
             <div className="logo-main">
-                <img style={size} alt="daily smarty ui image logo big" src="/assets/ds_circle_logo.png"/>
+                <Link to="/">
+                    <img style={size} alt="daily smarty ui image logo big" src="/assets/ds_circle_logo.png"/>
+                </Link>
             </div>
         )
     }
 }
 
-export default Logo; 
+export default Logo;
